@@ -1,18 +1,24 @@
 ## Label Generator
 
-![Label generator](https://edge-labels.netlify.app/i?text=label&height=20)
+![Label](https://edge-labels.netlify.app/i?text=label&height=20)
+![Generator](https://edge-labels.netlify.app/i?text=generator&height=20&bg=ffd700&fg=000)
+![Using](https://edge-labels.netlify.app/i?text=using&height=20&bg=4682b4)
+![SVGs](https://edge-labels.netlify.app/i?text=svg&height=20&bg=9b673c)
 
 ### How it works
 
-Simply query `/<background>/<text-color>/<text>` and you will get an SVG with the label.
+Simply query `/i` and you will get an SVG with the label.
 
-Where:
+You must specify the query parameters as follows:
 
-| Parameter  | Description                        |
-|------------|------------------------------------|
-| background | The background color of the label. |
-| foreground | The text color of the label.       |
-| text       | The text to display.               |
+
+| Parameter  | Description                        | Type     | Default / Type  |
+|------------|------------------------------------|----------|-----------------|
+| bg         | The background color of the label. | hex code | 000             |
+| fg         | The text color of the label.       | hex code | fff             |
+| text       | The text to display.               | sring    | *_Required_     |
+| width      | The image width. (Optional)        | string   | _(optional)_    |
+| height     | The text to display.               | string   | _(optional)_    |
 
 ### The math
 
