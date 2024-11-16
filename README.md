@@ -1,5 +1,7 @@
 ## Label Generator
 
+![Label generator](https://edge-labels.netlify.app/i?text=label&height=20)
+
 ### How it works
 
 Simply query `/<background>/<text-color>/<text>` and you will get an SVG with the label.
@@ -22,7 +24,12 @@ We are also leaving an offset of 12 units for the label rounding and stuff.
 The actual code that powers this in a non-minified way is
 
 ```
-<svg viewBox="0 0 ${totalWidth} 24" xmlns="http://www.w3.org/2000/svg">
+<svg 
+  viewBox="0 0 ${totalWidth} 24" 
+  xmlns="http://www.w3.org/2000/svg"
+  ${width ? `width="${width}px"` : ''} 
+  ${height ? `height="${height}px"` : ''}
+>
   <title>${text}</title>
   <path 
     fill="${bg}" 
