@@ -35,3 +35,8 @@ Okay, so according to my calculations, each letter is about 8 units wide.
 
 We are also leaving an offset of 12 units for the label rounding and stuff.
 
+### Usage
+
+It is built to work out-of-the-box with **Netlify**
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/code-jorge/edge-labels)
